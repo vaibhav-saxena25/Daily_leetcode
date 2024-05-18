@@ -17,9 +17,7 @@ public:
 
     int distributeCoins(TreeNode* root) {
         int moves = 0;
-        if(!root->left && !root->right) {
-            return 0;
-        }
+
         solve(root, moves);
         
         return moves;
